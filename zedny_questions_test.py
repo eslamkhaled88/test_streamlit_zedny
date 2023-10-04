@@ -17,8 +17,8 @@ import openpyxl
 # </style>
 # """
 
-# Apply the CSS style to the entire app
-st.markdown(app_alignment_css, unsafe_allow_html=True)
+# # Apply the CSS style to the entire app
+# st.markdown(app_alignment_css, unsafe_allow_html=True)
 
 # Page for uploading the Excel file
 def upload_page():
