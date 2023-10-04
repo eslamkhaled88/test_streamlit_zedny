@@ -45,7 +45,8 @@ def questions_page():
         return
     
     # Read the Excel file data
-    data = pd.read_excel(file_path)
+    data = pd.read_excel(file_path, engine="openpyxl")
+
 
     # Function to save changes to the Excel file
     def save_changes_to_excel(data, file_path):
