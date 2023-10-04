@@ -4,18 +4,18 @@ import os
 import openpyxl
 
 # Define the CSS for styling with text-align set to "right" and custom input styling
-app_alignment_css = """
-<style>
-    body {
-        direction: rtl;
-    }
-    input[type="text"] {
-        width: max-content;
-        margin-right: 5px;  /* Adjust the margin as needed */
-        margin-left: 5px;   /* Adjust the margin as needed */
-    }
-</style>
-"""
+# app_alignment_css = """
+# <style>
+#     body {
+#         direction: rtl;
+#     }
+#     input[type="text"] {
+#         width: max-content;
+#         margin-right: 5px;  /* Adjust the margin as needed */
+#         margin-left: 5px;   /* Adjust the margin as needed */
+#     }
+# </style>
+# """
 
 # Apply the CSS style to the entire app
 st.markdown(app_alignment_css, unsafe_allow_html=True)
