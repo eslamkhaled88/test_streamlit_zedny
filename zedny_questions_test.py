@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 import openpyxl
-from streamlit.runtime.scriptrunner.script_run_context import get_script_run_ctx as get_report_ctx
 # Define the CSS for styling with text-align set to "right" and custom input styling
 app_alignment_css = """
 <style>
