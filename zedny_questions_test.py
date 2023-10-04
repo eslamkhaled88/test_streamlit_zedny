@@ -39,6 +39,7 @@ def upload_page():
 
 # Page for displaying and editing questions
 def questions_page():
+    st.set_page_config(initial_sidebar_state="collapsed")
     file_path = st.session_state.get("file_path")
     if file_path is None or not os.path.exists(file_path):
         st.error("ؤجاءًا رفع فايل الإكسل")
@@ -62,6 +63,7 @@ def questions_page():
         data = pd.read_excel(file_path)
         # Page for displaying questions
         def page2(data):
+            st.set_page_config(initial_sidebar_state="collapsed")
             # Current question index
             current_question_idx = st.session_state.get("current_question_idx", 0)
 
